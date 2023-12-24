@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .produto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: gold;
+        }
+
+        .detalhes {
+            display: flex;
+            align-items: center;
+        }
+
+        .preco {
+            margin-right: 10px;
+            /* Adiciona espaço à direita do preço */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: inline-block; /* Exibe os itens de lista em linha */
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+    <h1>PRODUTOS</h1>
+    <div class="produto" id="produto1">
+
+        <class="produto" id="produto1">
+            <h2>Freio A Disco Hidráulico Gta Bike Mtb Dianteiro E Traseiro</h2>
+            <img src="./img/Captura de tela 2023-12-23 231324.png">
+            <br>
+            <p>PREÇO: R$179.76</p>
+            <br>
+            <p>Conheça o Freio A Disco Hidráulico Gta Bike Mtb Dianteiro E Traseiro:
+
+                Este freio a disco hidráulico da Gta é de excelente qualidade, sendo uma ótima opção quando se trata de
+                custo-benefício, proporcionando um bom desempenho e uma boa frenagem.</p>
+            <br>
+            <h2>ESPECIFICAÇÕES:</h2>
+            <p>- Marca: Gta
+                <br>
+                - Sistema: Hidráulico
+                <br>
+                - Composição: Alumínio, aço, plástico, fibras
+                <br>
+                - Posição: Dianteiro e Traseiro
+                <br>
+                - Comprimento do cabo dianteiro: 90cm
+                <br>
+                - Comprimento do cabo traseiro: 170cm
+                <br>
+                - Cor: Preto
+                <br>
+                - Conteúdo da embalagem: 1 freio dianteiro + 1 freio traseiro + parafusos para caliper
+            </p>
+            <br>
+            <br>
+            <button onclick="adicionarAoCarrinho('Freio hidráulico', 179.76)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto2">
+        <h2>Fone De Ouvido On-ear 520bt Comando De Voz Bluetooth Jbl Cor Azul Cor da luz Azul</h2>
+        <img src="./img/Captura de tela 2023-12-24 000545.png" alt="foto do produto" <br>
+        <p>Preço: R$229</p>
+        <br>
+        <p>JBL, uma marca de renome mundial no mercado de áudio, tem sido uma referência há mais de 70 anos pela alta
+            qualidade de seus produtos. Sua gama de fones de ouvido é variada, pois a empresa oferece produtos in-ear,
+            over-ear, on-ear, esportes e sem fio. Qualquer um deles é uma boa opção para fazer você desfrutar de sua
+            música favorita.</p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <p>Sendo headset você poderá ouvir suas músicas favoritas, manter ligações e jogar on-line sem perder nenhum
+            detalhe. Conta com bluetooth, sonoridade padrão JBL com desempenho Pure Bass, chamadas viva voz, design
+            dobrável, leve e confortável, um tempo de reprodução de até 57 horas, carga rápida 5 min = 3 hora de
+            reprodução, conexão Multipontos e acesso ao aplicativo JBL Headphones Voice Aware.
+        </p>
+        <br>
+        <br>
+        <button onclick="adicionarAoCarrinho('Fone de ouvido', 229)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto3">
+        <h2>Bicicleta Aro 29 Krw Alumínio 24 Vel Freio A Disco X42</h2>
+        <img src="./img/Captura de tela 2023-12-24 000414.png">
+        <br>
+        <p>Preço: R$806.55</p>
+        <br>
+        <p>A bicicleta KRW X42 foi desenvolvida para quem quer realizar um passeio e pegar trilhas leves. Com seu quadro
+            em alumínio 6061, fornece segurança e leveza no seu pedal. Possuí diversas cores que garante um estilo
+            próprio para você.</p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <P>Quadro em alumínio 6061
+            <br>
+            Abraçadeira alumínio de selim 31,8mm
+            <br>
+            Alavancas EZ-fire
+            <br>
+            Aro aéro 29 pared dupla
+            <br>
+            Caixa de direção semi-integrado
+            <br>
+            Câmbio dianteiro importado
+            <br>
+            Cambio traseiro importado
+            <br>
+            Pedivela triplo preto
+            <br>
+            Canote de selim 27.2mm com carrinho
+            <br>
+            Corrente 8 velocidades index
+            <br>
+            Cubo rosca com blocagem
+            <br>
+            Espaçador alumínio 10 mm
+            <br>
+            Garfo suspensão mecânica
+            <br>
+            Guidão alumínio 31.8mm
+            <br>
+            Kit cabo com conduiter
+            <br>
+            Mesa alumínio 31.8mm
+            <br>
+            Movimento central rolamentado 122mm
+            <br>
+            Pedal nylon
+            <br>
+            Pinça de freio a disco com rotor de 160mm
+            <br>
+            Pneu 29
+            <br>
+            Raio 285x2.0mm aço preto
+            <br>
+            Roda livre 8 velocidades index
+            <br>
+            Selim mtb.
+        </P>
+        <br>
+        <br>
+        <button onclick="adicionarAoCarrinho('bicicleta aro 29', 806.55)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto 4">
+        <h2>Lego O Recife De Coral Quantidade de peças 92</h2>
+        <img src="./img2/MINECRAFT.png">
+        <br>
+        <p>Preço R$126.90</p>
+        <br>
+        <p>Com 90 anos de trajetória, a Lego é um dos principais fabricantes mundiais de materiais de jogo. Para a
+            marca, o jogo é vital no desenvolvimento de todos os meninos e meninas, pois os ajuda a prosperar num mundo
+            complexo e desafiante. Seu principal objetivo é inspirar e desenvolver os construtores do futuro, além de
+            gerar um impacto positivo na sociedade e no planeta. Os brinquedos da Lego oferecem a possibilidade dum
+            descobrimento permanente, oferecendo a oportunidade mágica de criar algo novo sempre.</p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <p>O conjunto Lego Minecraft permitirá que você construa e interprete aventuras inspiradas no universo Minecraft
+            de forma prática com cada um de suas personagens e elementos exclusivos do popular videogame. Você poderá
+            criar seu próprio mundo adaptando-o às suas habilidades, gostos e formas favoritas.</p>
+        <button onclick="adicionarAoCarrinho('Lego', 126.90)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto 5">
+        <h2>Diver New Born Bebê Faz xixi Divertoys 8046</h2>
+        <img src="./img2/BONECA.png">
+        <br>
+        <p>Preço R$78.99</p>
+        <br>
+        <p>Uma amizade fiel
+            A partir de hoje, toda criança será acompanhada por alguém incondicional, capaz de transformar o mundo em um
+            lugar encantador.
+        </p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <p>Personagens inesquecíveis
+            Com Bebê, as experiências das crianças serão incríveis! Seu design favorece a criatividade e a imaginação.
+        </p>
+        <button onclick="adicionarAoCarrinho('Boneca', 78.99)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto 6">
+        <h2>Aspirador De Pó Vertical 2 Em 1 Clean Speed 1000w Wap Cor Vermelho 110V</h2>
+        <img src="./img2/ASPIRADOR.png">
+        <br>
+        <p>Preço R$179.34</p>
+        <br>
+        <p>Versátil e prático, o Aspirador de Pó Vertical 2 em 1 Clean Speed 1000W Wap é o melhor aspirador de pó
+            vertical para o seu dia a dia. Leve e portátil, ele possui 1000W de potência e é um produto 2 em 1, que pode
+            ser utilizado no formato vertical ou como aspirador de mão.</p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <p>Possui tecnologia Cyclone que aumenta o seu poder de sucção e faz com que a sujeira seja aspirada com muito
+            mais eficiência. Além disso, é equipado com o exclusivo sistema 360º, que aumenta os ângulos de aspiração e
+            facilita a limpeza em locais de difícil acesso.</p>
+        <button onclick="adicionarAoCarrinho('Aspiador de pó', 179.34)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto 7">
+        <h2>Tênis Nike Precision 6 Masculino</h2>
+        <img src="./img3/TENIS.png">
+        <br>
+        <p>Preço R$569.99</p>
+        <br>
+        <p>Crie espaço, pare e drible com o Nike Precision 6 FlyEase. Ele foi criado para permitir que jogadores rápidos
+            mudem de velocidade e de direção, mantendo-se no controle. Desde a boca e a língua macias até o padrão de
+            tração espinha de peixe modificado, esse ágil tênis de cano baixo permite que você dê o máximo de si
+            enquanto acelera o ritmo.</p>
+        <br>
+        <h2>ESPECIFICAÇÕES:</h2>
+        <p>A espuma macia na boca e na língua aumenta a sensação de conforto em volta do tornozelo e por cima do pé,
+            áreas onde você não quer distrações.
+            <br>
+            Esculpido para a velocidade
+            <br>
+            A entressola de espuma esculpida é macia e sustentada, proporcionando amortecimento para o movimento
+            contínuo durante o jogo.
+            <br>
+            Tração para cortes rápidos
+            <br>
+            O padrão de tração espinha de peixe proporciona aderência multidirecional, ideal para jogadores que dependem
+            da rapidez e habilidade de corte. A borracha envolve as laterais no antepé proporcionando tração máxima.
+            <br>
+            Firme o seu ajuste
+            <br>
+            O novo posicionamento dos cadarços e os passantes sobre o médio pé ajudam a manter os pés seguros e livres
+            de distrações.
+            <br>
+            Mais benefícios
+            <br>
+            - A boca de cano baixo oferece mobilidade no tornozelo.
+            - O recorte visível na espuma ajuda a reduzir o peso.
+            <br>
+            Detalhes do produto
+            <br>]
+            - Sobreposições sem costuras
+            - Etiqueta da Nike na parte de cima da língua
+            - Logotipo Swoosh moldadO
+        </p>
+        <button onclick="adicionarAoCarrinho('Tênis Nike', 569.99)">Adicionar ao Carrinho</button>
+    </div>
+    <h3>OBS: TODOS ESE PRODUTOS NÃO SÃO VENDIDOS AQUI, ESSE SITE É SOMENTE PARA ILUSTRAÇÃO. SE QUISEREM COMPRAR ESSES
+        PRODUTOS CLIQUE NO LINK ABAIXO.</h3>
+    <ul>
+        <li><a href="https://www.mercadolivre.com.br/">MERCADO LIVRE</a></li>
+    </ul>
+    <br>
+    <h3>OBS: OS LINKS DOS PRODUTOS ACIMA ESTARÃO ABAIXO, É APENAS CLICAR EM CIMA DO LINK.</h3>
+    <ul>
+        <li><a href="https://produto.mercadolivre.com.br/MLB-3381912309-freio-disco-hidraulico-bike-mtb-dianteiro-traseiro-bicicleta-_JM#backend=item_decorator&backend_type=function&client=history-polycard">Freio A Disco Hidráulico Gta Bike Mtb Dianteiro E Traseiro</a></li>
+        <br>
+        <li><a href="https://www.mercadolivre.com.br/fone-de-ouvido-on-ear-520bt-comando-de-voz-bluetooth-jbl-cor-azul-cor-da-luz-azul/p/MLB23172321#backend=item_decorator&backend_type=function&client=history-polycard">Fone De Ouvido On-ear 520bt Comando De Voz Bluetooth Jbl Cor Azul Cor da luz Azul</a></li>
+        <br>
+        <li><a href="https://produto.mercadolivre.com.br/MLB-2191179762-bicicleta-aro-29-krw-aluminio-24-vel-freio-a-disco-x42-_JM#backend=item_decorator&backend_type=function&client=history-polycard">Bicicleta Aro 29 Krw Alumínio 24 Vel Freio A Disco X42</a></li>
+        <br>
+        <li><a href="https://www.mercadolivre.com.br/lego-o-recife-de-coral-quantidade-de-pecas-92/p/MLB18574030#backend=item_decorator&backend_type=function&client=history-polycard">Lego O Recife De Coral Quantidade de peças 92</a></li>
+        <br>
+        <li><a href="https://www.mercadolivre.com.br/diver-new-born-beb-faz-xixi-divertoys-8046/p/MLB18592513#backend=item_decorator&backend_type=function&client=history-polycard">Diver New Born Bebê Faz xixi Divertoys 8046</a></li>
+        <br>
+        <li><a href="https://www.mercadolivre.com.br/aspirador-de-po-vertical-2-em-1-clean-speed-1000w-wap-cor-vermelho-110v/p/MLB10818833#backend=item_decorator&backend_type=function&client=history-polycard">Aspirador De Pó Vertical 2 Em 1 Clean Speed 1000w Wap Cor Vermelho 110V</a></li>
+        <br>
+        <li><a href="https://produto.mercadolivre.com.br/MLB-2956433627-tnis-nike-precision-6-masculino-_JM#backend=item_decorator&backend_type=function&client=history-polycard">Tênis Nike Precision 6 Masculino</a></li>
+    </ul>
+    <h1>Carrinho</h1>
+    <ul id="carrinho">
+        <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+    </ul>
+
+    <script>
+        function adicionarAoCarrinho(nome, preco) {
+            const item = document.createElement('li');
+            item.classList.add('produto');
+
+            const detalhes = document.createElement('div');
+            detalhes.classList.add('detalhes');
+
+            const nomeProduto = document.createElement('span');
+            nomeProduto.textContent = `${nome} - `;
+            detalhes.appendChild(nomeProduto);
+
+            const precoProduto = document.createElement('span');
+            precoProduto.textContent = `R$${preco.toFixed(2)}`;
+            precoProduto.classList.add('preco');
+            detalhes.appendChild(precoProduto);
+
+            const removerBotao = document.createElement('button');
+            removerBotao.textContent = 'Remover do Carrinho';
+            removerBotao.addEventListener('click', function () {
+                item.remove(); // Remove o item do carrinho ao clicar no botão
+            });
+
+            detalhes.appendChild(removerBotao);
+
+            item.appendChild(detalhes);
+
+            const carrinho = document.getElementById('carrinho');
+            carrinho.appendChild(item);
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
